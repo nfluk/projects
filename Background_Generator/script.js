@@ -5,6 +5,8 @@ let h3 = document.querySelector('h3');
 let body = document.body;
 let direction = 'right';
 
+h3.textContent = `background: linear-gradient(to right, #ff0000, #ffff00)`;
+
 btn.addEventListener('click', () => {
   if (direction === 'right') {
     direction = 'left';
