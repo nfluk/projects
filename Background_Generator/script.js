@@ -25,8 +25,7 @@ color2.addEventListener('input', () => {
 });
 
 function addCodeSnippet(direction = 'right') {
-  let gradient = `linear-gradient(to ${direction}, ${color1.value}, ${color2.value}`;
-  h3.innerText = '';
-  h3.appendChild(document.createTextNode(`background: ${gradient});`));
+  let gradient = `linear-gradient(to ${direction}, ${color1.value}, ${color2.value})`;
+  h3.textContent = `background: ${gradient};`;
   body.style.backgroundImage = gradient;
 }
